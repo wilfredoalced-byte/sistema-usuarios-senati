@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f6fb; color: #172a45;
+  font-family: Arial, sans-serif; }
+.contenedor { max-width: 1000px; margin: 36px auto; padding: 0 18px; }
+header { margin-bottom: 24px; }
+h1 { margin: 10px 0; font-size: 32px; }
+h2 { margin-top: 0; font-size: 20px; }
+header p { color: #64748b; }
+.etiqueta { color: #1663aa; font-weight: bold; font-size: 13px; }
+.panel { background: white; border-radius: 12px; padding: 24px;
+  margin-bottom: 22px; box-shadow: 0 4px 18px #172a4510; }
+form { display: grid; gap: 14px; }
+label { display: grid; gap: 7px; font-weight: bold; }
+input { width: 100%; padding: 12px; border: 1px solid #cbd5e1;
+  border-radius: 8px; font-size: 15px; }
+.acciones, .cabecera-tabla { display: flex; gap: 10px;
+  align-items: center; justify-content: space-between; flex-wrap: wrap; }
+button { padding: 10px 15px; border: 0; border-radius: 7px;
+  background: #1765b3; color: white; cursor: pointer; }
+button:disabled { opacity: .6; cursor: not-allowed; }
+button.secundario { background: #e8eef7; color: #21466c; }
+button.peligro { background: #c73645; }
+.mensaje { color: #21466c; font-weight: bold; }
+.tabla-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px; border-bottom: 1px solid #e5eaf1;
+  text-align: left; }
+th { background: #f5f8fc; }
+@media (max-width: 600px) {
+  h1 { font-size: 25px; }
+  .panel { padding: 16px; }
+}
